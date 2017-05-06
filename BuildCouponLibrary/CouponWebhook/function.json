@@ -1,0 +1,25 @@
+﻿{
+  "disabled": false,
+  "scriptFile": "..\\bin\\BuildCouponLibrary.dll",
+  "entryPoint": "BuildCouponLibrary.CouponHandler.Run",
+  "bindings": [
+    {
+      "type": "httpTrigger",
+      "direction": "in",
+      "webHookType": "genericJson",
+      "name": "req"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "type": "queue",
+      "name": "eventOutput",
+      "queueName": "aievents1",
+      "connection": "AiStorageConnection",
+      "direction": "out"
+    }
+  ]
+}
