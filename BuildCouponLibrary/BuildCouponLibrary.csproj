@@ -145,7 +145,6 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="appsettings.json" />
     <Content Include="host.json" />
     <Content Include="CouponWebhook\function.json" />
     <Compile Include="CouponWebhook\CouponHandler.cs" />
