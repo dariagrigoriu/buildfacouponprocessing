@@ -9,11 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="CouponWebhook\function.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.0-alpha2" />
     <PackageReference Include="Microsoft.Azure.WebJobs" version="2.1.0-beta1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Core" version="2.1.0-beta1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Http" Version="1.0.0-beta1" />
@@ -25,6 +20,9 @@
 
   <ItemGroup>
     <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="CouponWebhook\function.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

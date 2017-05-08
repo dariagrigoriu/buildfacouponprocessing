@@ -1,6 +1,6 @@
 ﻿{
   "disabled": false,
-  "scriptFile": "..\\bin\\BuildCouponLibrary.dll",
+  "scriptFile": "..\\BuildCouponLibrary.dll",
   "entryPoint": "BuildCouponLibrary.CouponHandler.Run",
   "bindings": [
     {
