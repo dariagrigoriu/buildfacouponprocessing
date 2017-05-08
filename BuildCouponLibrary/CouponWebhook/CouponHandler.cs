@@ -11,7 +11,11 @@ namespace BuildCouponLibrary
 {
     public static class CouponHandler
     {
-        public static async Task<object> Run(HttpRequestMessage req, TraceWriter log, IAsyncCollector<String> eventOutput)
+        [FunctionName("CouponWebhook")]
+        public static async Task<object> Run(
+            [HttpTrigger] HttpRequestMessage req, 
+            TraceWriter log,
+            [Queue("aievents1", Connection = "AiStorageConnection")] IAsyncCollector<String> eventOutput)
         {
             log.Info($"Coupon processing webhook was triggered!");
 
