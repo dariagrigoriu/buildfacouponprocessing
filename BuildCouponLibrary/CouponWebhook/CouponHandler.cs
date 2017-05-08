@@ -25,7 +25,7 @@ namespace BuildCouponLibrary
             String couponValue = null;
             if (data.time == null)
             {
-                couponValue = "$5 off your purchase";
+                couponValue = "Free Build Tshirt with your purchase";
             }
             else
             {
