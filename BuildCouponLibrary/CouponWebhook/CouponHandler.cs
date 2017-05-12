@@ -25,7 +25,7 @@ namespace BuildCouponLibrary
             String couponValue = null;
             if (data.time == null)
             {
-                couponValue = "No coupon offer available at this time. Please check back later.";
+                couponValue = "Free T-Shirt.";
             }
             else
             {
